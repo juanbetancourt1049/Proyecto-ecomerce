@@ -1,0 +1,218 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    background-color: rgb(37, 33, 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.header .logo h1 {
+    color: white;
+    font-size: 16px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    transition: background-color 0.3s, border-bottom 0.3s;
+}
+
+.nav a:hover {
+    background-color: rgb(152, 133, 133);
+    border-bottom: 2px solid rgb(228, 46, 46);
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner {
+    background: url('ruta-a-tu-imagen.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    background-color: antiquewhite;
+}
+
+.banner h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.banner p {
+    font-size: 14px;
+}
+
+/* Productos destacados */
+.featured-products {
+    padding: 10px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Estilo para los productos */
+.product-item {
+    background-color: white;
+    border: 1px solid rgb(190, 185, 185);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+/* Ajustar el tamaño de las imágenes */
+.product-item img {
+    width: 80%; /* Reduce el tamaño de la imagen al 80% de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    max-width: 200px; /* Limita el tamaño máximo de la imagen */
+    margin-bottom: 10px;
+}
+
+/* Información del producto */
+.product-info {
+    font-size: 11px;
+    color: rgb(51, 50, 50);
+    padding: 5px;
+}
+
+.product-name {
+    font-size: 13px;
+    color: darkslategray;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 10px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 12px;
+    color: forestgreen;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Botón de compra */
+.product-button {
+    background-color: forestgreen;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: darkgreen;
+}
+
+/* Testimonios */
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+.testimonial {
+    background-color: rgb(85, 85, 197);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    flex: 1;
+    margin: 2px;
+    font-size: 12px;
+}
+
+.testimonial:hover {
+    background-color: rgb(114, 24, 198);
+}
+
+.testimonials h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: darkgrey;
+    padding: 0.5rem 1rem; /* Padding más compacto */
+    text-align: center;
+    display: flex; /* Añadimos flexbox */
+    justify-content: space-between; /* Distribuye el contenido */
+    align-items: center; /* Centra verticalmente */
+}
+
+.footer p {
+    color: white;
+    font-size: 10px;
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+.footer .social-links {
+    display: flex; /* Alinea los enlaces sociales */
+    gap: 10px; /* Espacio entre enlaces */
+    align-items: center;
+}
+
+.footer .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    white-space: nowrap; /* Previene saltos de línea */
+}
+
+.footer .social-links a:hover {
+    color: #ff6347;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer {
+        padding: 0.3rem 0.5rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

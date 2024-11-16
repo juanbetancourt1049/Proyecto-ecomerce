@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Tienda Online y Carrito de Compras</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <!-- Header de la tienda -->
+    <header class="header">
+        <div class="logo">
+            <h1>Tienda Online</h1>
+        </div>
+        <nav class="nav">
+            <a href="home.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito-seccion">Carrito</a> <!-- Enlace para desplazarse al carrito -->
+            <a href="login.html">Cerrar sesión</a>
+        </nav>
+    </header>
+
+    <!-- Sección de banner de la tienda -->
+    <section class="banner">
+        <h2>Oferta exclusiva de temporada</h2>
+        <p>¡Descuento hasta el 50% en nuestros productos!</p>
+    </section>
+
+    <!-- Sección de productos destacados -->
+    <section class="featured-products" id="container-productos">
+        <h2>Nuevos productos</h2>
+        <div class="product-list" id="product-list"></div>
+    </section>
+
+    <!-- Sección de carrito de compras -->
+    <section id="carrito-seccion">
+        <h1>Carrito de Compras</h1>
+        <div id="carrito-list"></div>
+        <button id="pagar-btn" class="btn-pagar" style="display: none;">Pagar</button> <!-- Botón de pagar oculto inicialmente -->
+    </section>
+
+    <!-- Footer de la tienda -->
+    <footer class="footer">
+        <p>2024 Tu tienda online. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="carrito.js"></script> <!-- JavaScript para manejar el carrito de compras -->
+</body>
+</html>
